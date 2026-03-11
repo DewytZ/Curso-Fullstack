@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS.css" rel="stylesheet" type="text/css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat"
+    rel="stylesheet"
+    type="text/css" />
+</head>
+<body>
+    <p id="parrafo1">Si se quiere poner un parrafo se debe encerrar el texto con la etiqueta <code>"&lt;p&gt;"</code>, nadamas que se debe indicar el cierre con un <code>"&lt;/p&gt;"</code> </p>
+    <p>También se pueden<strong> anidar</strong> elementos, <strong> este</strong> caso <strong>estamos</strong> anidando la etiqueta <code>"&lt;strong&gt;"</code> para resaltar una palabra de un texto</p>
+    <p><strong>Elementos Vacios</strong></p>
+    <p>Algunos elementos <strong>no</strong> poseen contenido, y son llamados elementos vacios, por ejemplo los <code>&lt;img&gt;</code> de los HTML como ejemplo:</p>
+    <p><code>&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba /&gt;</code></p>
+    <p>Posee dos atributos, pero no hay etiqueta de cierre <code>&lt;/img&gt;</code> ni contenido encerrado. esto es porque un elemento de imagen no encierra contenido al cual afectar. su propósito es desplegar una imagen en la página HTML, el el lugar en que aparece.</p>
+    <p><strong>Anatomía de documento HTML</strong></p>
+    <p>Miraremos los elementos HTML individuales los cuales combinados forman una pagina HTML entera:</p>
+    &lt;!doctype html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="utf-8" /&gt;<br>
+&lt;title&gt;Mi pagina de prueba&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    <p><strong>&lt;!doctype html&gt;</strong></p>
+    <p>el tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), los tipos de documento actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente.</p>
+    <p><strong>&lt;html&gt;&lt;/html&gt;</strong></p>
+    <p>el elemento &lt;html&gt;Este elemento encierra todo el contenido de la página entera y, a veces, se le conoce como el elemento raíz (root element).</p>
+    <p><strong>&lt;head&gt;&lt;/head&gt;</strong></p>
+    <p>Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc.</p>
+    <p><strong>&lt;meta charset="utf-8"&gt;</strong></p>
+    <p>&lt;meta&gt; Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que puedas incluir.</p>
+    <p><strong>&lt;title&gt;&lt;/title&gt;</strong></p>
+    <p>Este elemento establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.</p>
+    <p><strong>&lt;body&gt;&lt;/body&gt;</strong></p>
+    <p>Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</p>
+    <br>
+    <br>
+    <p><strong>Imagen de prueba</strong></p>
+    <img src="https://www.manualweb.net/img/logos/html.png" alt="imagen prueba"/>
+
+    <p><strong>Encabezados</strong></p>
+    <p>Los elementos de encabezado permiten especificar que ciertas partes del contenido son encabezados, o subencabezados del contenido. De la misma forma que un libro tiene un título principal, y que a su vez puede tener títulos por cada capítulo individual, y subtítulos dentro de ellos, un documento HTML puede tenerlos también. HTML posee seis niveles de encabezados, &lt;h1&gt;–&lt;h6&gt;</p>
+    <h1>&lt;h1&gt;Mi título principal&lt;/h1&gt;</h1>
+    <h2>&lt;h2&gt;Mi título de nivel superior&lt;/h2&gt;</h2>
+    <h3>&lt;h3&gt;Mi subtítulo&lt;/h3&gt;</h3>
+    <h4>&lt;h4&gt;Mi sub-subtitulo&lt;/h4&gt;</h4>
+
+    <p><strong>Listas</strong></p>
+    <p>Hay dos tipos de listas:</p>
+    <p><strong>Listas desordenadas</strong> son aquellas en las que el orden de los items no es relevante, como en una lista de compras. Estas son encerradas en un elemento &lt;ul&gt; (unordered list).</p>
+    <p><strong>Listas ordenadas</strong> son aquellas en las que el orden sí es relevante, como en una receta. Estas son encerradas en un elemento &lt;ol&gt; (ordered list).</p>
+    <p><strong>Ejemplo</strong></p>
+    <p>En Mozilla, somos una comunidad de</p>
+    <ul>
+    <li>tecnólogos</li>
+    <li>pensadores</li>
+    <li>constructores</li>
+    </ul>
+    <p>trabajando juntos...</p>
+
+    <p><strong>Vínculos</strong></p>
+    <p>Los vínculos o enlaces son muy importantes —son los que hacen de la web, la web—. Para implementar un vínculo, necesitas usar un vínculo simple — &lt;a&gt; — la a es la abreviatura de la palabra inglesa «anchor» («ancla»)</p>
+    <p>De ejemplo dejaré algunos vínculos a páginas de interés</p>
+    <a href="https://www.youtube.com/"
+        >Youtube</a><br>
+    <a href="https://www.Google.com/"
+        >Google</a><br>
+    <a href="https://www.Facebook.com/"
+        >Facebook</a>
+</body>
+</html>
